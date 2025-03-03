@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('img/fondo.jpg');
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: justify;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%), 
+                        url('img/header.jpg'); /* Reemplaza con el nombre de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Asegura que el texto sea visible */
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            background: #92acc5;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #0056b3;
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #92acc5;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .skill img {
+            width: 500px;
+            height: 700px;
+            object-fit: contain;
+            margin-bottom: 0;
+            object-fit: cover;
+            border-radius: 0 !important;
+        }
+        .education {
+            text-align: center;
+        }
+        .job_text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diego Nicolás Ávila Moreno</h1>
+            <p>Científico de Datos</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="personal.html">Perfil Profesional</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="intereses.html">Intereses</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <h2>Intereses Profesionales</h2>
+            <p>Desde hace un par de años he notado un gran crecimiento en mis habilidades técnicas y teóricas en todo lo referente a soluciones analíticas. La experiencia y el constante estudio de esta materia que hasta el día de hoy sigue siendo una ciencia de nuevos desarrollos me ha permitido mantenerme al día en sus avances.
+            </p>
+            <p>Por esta razón mi mayor interés es continuar ahora con la mejora de ciertas habilidades blandas que me permitan llegar al objetivo de liderar equipos de desarrollo basados en Ciencia de Datos e incluso otro tipo de tecnologías muy relacionadas con este sector del conocimiento como lo son los desarrollos de aplicativos, fullstack, páginas web y en general servicios de tecnología personalizables y de valor para las organizaciones.
+            </p>
+            <p>Igualmente, la evolución tan avanzada en modelos predictivos ha llevado a generar sistemas de inteligencia artificial cada vez más complejidad y al mismo tiempo de mayor impacto a nivel empresarial, social y económico. Esto junto con la evolución de no solamente desarrollo de software sino también de hardware, lleva a la importancia de empezar a manejar conocimientos de mayor complejidad como lo es la computación cuántica. Mi deseo es empezar a desarrollar los conceptos de base en este tema que permitan dar un primer paso a convertirme en uno de los primeros profesionales con conocimientos en este tipo de tecnología que en unos años empezaría a entrar en el país con un impacto muy alto en lo que actualmente se desarrolla alrededor de las TIC (Tecnologías de la información y la Comunicación)
+            </p>
+        </section>
+        <section id="about">
+            <h2>Intereses Personales</h2>
+            <p>Fuera de la programación, la estadística y de cualquier material profesional que aplico a diario, tengo otros intereses. Desde muy joven soy dibujante donde practico trabajos a lápiz, rapidografo, colores y en general cualquier material que genere alguna marca distintiva como bolígrafos y tizas. Dejo algunos ejemplos aquí de los trabajos que he realizado.
+            </p>
+            <div class="skills-list">
+                <div class="skill">
+                    <a href="img/d1.jpg" target="_blank">
+                        <img src="img/d1.jpg" alt="d1">
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="img/d2.jpg" target="_blank">
+                        <img src="img/d2.jpg" alt="d2">
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="img/d3.jpg" target="_blank">
+                        <img src="img/d3.jpg" alt="d3">
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="img/d4.jpg" target="_blank">
+                        <img src="img/d4.jpg" alt="d4">
+                    </a>
+                </div>
+            </div>
+            <p>Igualmente soy lector siendo fanático de las sagas de diferentes tipos. Siempre he pensado que leer una saga es similar a una maratón de Netflix, solo que cada uno se imagina las escenas a su forma de entender. Mis escritores favoritos son Santiago Posteguillo, Maurice Druon y Ken Follet. Mis libros favoritos son “La Caída de los Gigantes”, “Circo Máximo” y todos los libros (excepto el último) de “Los Reyes Malditos”.
+            </p>
+            <p>Igualmente me gusta mucho la escena fílmica donde siempre estoy pendiente de los nuevos estrenos y avances de las películas del momento. Trato de ver una o dos películas a la semana con el objetivo de no perder la costumbre. Entre mis directores favoritos está Cristopher Nolan, Martin Scorsese, Steven Spilberg y recientemente Robert Eggers. Mis películas favoritas son “The Irishman”, “The Goodfather” (toda la saga), “Saving Private Ryan” y mi gusto culposo la saga Transformers de Michael Bay.
+            </p>
+            <p>Por último y no menos importante desde que tengo 10 años me gusta leer sobre historia. Alguna vez me preguntaron que carrera habría escogido si no hubiese sido ingeniero industrial y la respuesta fue historiador. Me gusta estudiar los eventos del siglo XVIII, XIX y XX debido a que son los de mayor evolución social y tecnológica de nuestra existencia humana, pero desde que leí “Los Reyes Malditos” de Maurice Druon también me he puesto a investigar sobre el medioevo y su impacto en el desarrollo de occidente.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

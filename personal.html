@@ -42,14 +42,14 @@
         }
         nav ul li a {
             text-decoration: none;
-            background: #2b6ba7;
-            color: white;
+            background: #92acc5;
+            color: rgb(0, 0, 0);
             padding: 10px 15px;
             border-radius: 5px;
             transition: background 0.3s;
         }
         nav ul li a:hover {
-            background: #2b6ba7;
+            background: #0056b3;
         }
         #about img {
             width: 150px;
@@ -74,8 +74,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: #2b6ba7;
-            color: white;
+            background: #92acc5;
+            color: rgb(0, 0, 0);
             padding: 10px;
             border-radius: 5px;
         }
@@ -88,6 +88,9 @@
         .education {
             text-align: center;
         }
+        .job_text {
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
@@ -99,15 +102,15 @@
         <nav>
             <ul>
                 <li><a href="personal.html">Perfil Profesional</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="index.html">Menu Principal</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="intereses.html">Intereses</a></li>
+                <li><a href="index.html">Inicio</a></li>
             </ul>
         </nav>
         <section id="about">
+            <h2>Acerca de Mi</h2>
             <img src="profile.jpg" alt="Tu Foto">
-            <p>Hola, mi nombre es Nicolás Ávila y soy Cientifico de Datos. Mi pregrado es en Ingeniería Industrial y desarrollé una Maestría en Estadística Aplicada y Ciencia de Datos. Desde hace 8 años he estado inmerso en el mundo de la Ciencia de Datos. He trabajado en diversas áreas industriales y de estudios sociales donde he podido identificar el potencial que tiene la estadística, el Machine Learning y las TIC en el desarrollo de estos sectores.
+            <p>Hola, mi nombre es Nicolás Ávila y soy Cientifico de Datos. Mi pregrado es en Ingeniería Industrial y desarrollé una Maestría en Estadística Aplicada y Ciencia de Datos. Desde hace 8 años he estado inmerso en el mundo de la <a href="https://medium.com/datos-y-ciencia/qu%C3%A9-diablos-es-ciencia-de-datos-f1c8c7add107" target="_blank">Ciencia de Datos</a>. He trabajado en diversas áreas industriales y de estudios sociales donde he podido identificar el potencial que tiene la <a href="https://medium.com/datos-y-ciencia/qu%C3%A9-diablos-es-ciencia-de-datos-f1c8c7add107" target="_blank">estadística</a>, el <a href="https://medium.com/datapath/necesitas-saber-estos-conceptos-de-estad%C3%ADstica-para-entrar-al-mundo-de-los-datos-48d88838a91a" target="_blank">machine learning</a> y las <a href="https://juandoming.medium.com/las-tic-facilitan-el-aprender-a-aprender-b7a5f1d31ebd" target="_blank">TIC</a> en el desarrollo de estos sectores.
             </p>
             <p>Mi carrera inició hace unos 10 años como encuestador, una faceta poco reconocida en estudios estadísticos. En ese entonces no tenia idea de lo que consistía llevar a cabo un análisis probabilístico o entrenar una red neuronal. Con el tiempo al adentrarme más en el desarrollo de estudios de mercado o sociales que hacíamos en ese entonces comprendí la importancia que tenia la información que recolectábamos. Cada número, calificación y demás datos que recogíamos eran indispensables para identificar tendencias, comportamientos y señales que permitirían tomar decisiones adecuadas a favor de cada organización con la que trabajaba.
             </p>
@@ -136,6 +139,27 @@
             <p>Como profesional siempre me he destacado por mi capacidad de aprender con rapidez. Muchos de los conocimientos que tengo los he aprendido de manera empírica, siempre en el camino, pues al final la verdadera forma de aprender es con la experiencia. Cada una de las oportunidades que he obtenido las he aprovechado al máximo no solamente en mi formación profesional y humana sino también en ofrecer un granito de arena en las organizaciones donde he trabajado.
             </p>
         </section>
+        <section id="experiencia">
+            <h2>Experiencia Profesional</h2>
+            <div class="skills-list">
+                <div class="skill"><img src="img/ElBosque.png" alt="Estadística"><span class="education">
+                    <p>Analista de Datos</p>
+                    <p>Cenit Transporte (Jun 2023 - Actualidad)</p>
+                    <p class="job_text">Analista de Datos contratista encargado del desarrollo de soluciones analíticas de naturaleza descriptiva y predictiva para el CIA (Centro de Inteligencia Analítica) de Cenit Transporte.</p>
+                    <p class="job_text">Analítica de Desempeño Energético: Diseño de visualizador para analitica descriptiva del consumo de energía generado por estaciones de bombeo para la identificación de sobreconsumo y ahorro de este recurso. El flujo de datos de la herramienta consiste en la extracción de datos de la API Real Time de señales de las estaciones que alimentan una serie de códigos Python diseñados sobre Databricks que generan las tres consultas de base para su visualización en Power BI. La herramienta se encuentra automatizada para correr cada hora y tener datos a tiempo real del estado de las estaciones. Actualmente se encuentra en fase de exploración para la generación de modelos predictivos de mejor configuración de estaciones según eficiencia energética. Herramientas utilizadas: Python (Databricks, Pandas, Numpy, Matplotlib, Sklearn), Azure Data Lake, API RealTime, Power BI y Azure DevOps.</p>
+                    <p class="job_text">Reporte Presidencia - Comité Directivo: Diseño de dashboards en Power BI para la generación de reportes semanales para Comité Directivo. Estos reportes se alimentan de una serie de formatos tradicionales de Excel manejados por la organización en diversas áreas. El trabajo consistió en unificar dichas fuentes en tres diferentes reportes que pudieran ser automatizables en su proceso de actualización y permitieran a Comité Directivo tener información actualizada y de ahí poder sacar conclusiones. Actualmente se está desarrollando un evolutivo donde se quieren agregar 2 áreas nuevas y aplicar data histórica de las ya existentes. Herramientas Utilizadas: Python y Azure DevOps.</p>
+                    <p class="job_text">Hito de Capacitaciones: Diseño de equipo de desarrollo de conocimientos en analítica para la organización. Enseñanza en el uso de herramientas para Business Intelligence (Python) y de programación para Ciencia de Datos (Python). Herramientas utilizadas: Azure DevOps</p>
+                </span></div>
+                <div class="skill"><img src="img/ElBosque.png" alt="Estadística"><span class="education">
+                    <p>Consultor en Analítica</p>
+                    <p>IQuartil SAS (Ago 2017 - Jun 2023)</p>
+                    <p class="job_text">Consultor en analítica para el desarrollo de soluciones a empresas de diversos sectores (minería, educación y social) y continua gestión de las soluciones desarrolladas a estas organizaciones.</p>
+                    <p class="job_text">Visualizadores para Trabajo de Campo: Diseño de visualizadores para evolución de trabajo de campo en ejecución de encuestas de diversa naturaleza (comercial, educativa y social). Estos visualizadores no solo mostraban el avance en la ejecución de cuestionarios sino que también daban un  primer vistazo de los resultados de las preguntas desarrolladas en los cuestionarios para empezar a identificar resultados del estudio en materia descriptiva. Herramientas utilizadas: Knime, Python y Power BI.</p>
+                    <p class="job_text">Modelo de Asignación de Puestos de Trabajo para Operación de Máquinas en Carbones El Cerrejón: Este modelo identifica con una serie de variables tanto naturales como exógenas el mejor puesto de trabajo a asignar a un operador de máquina tomando en cuenta datos de experiencia y capacidades del operador, datos geográficos y ergonómicos. Igualmente permite identificar el mejor puesto de trabajo de cada operador según demanda de equipos y tiempo necesario para lograr la generación de dicho recurso. Realiza igualmente el cálculo de gastos de alimentación, estadía y capacitación según los resultados de asignación generados por la herramienta. Herramientas utilizadas: Knime y Power BI.</p>
+                    <p class="job_text">Identificación de Factores de Detención de Palas en Operación Minera para Carbones El Cerrejón: Por medio de recursos de histórico de detención de palas identificamos los factores que hacen que exista mayor frecuencia en la detención de palas excavadoras de material. Igualmente identificamos los factores de mayot impacto en tiempo y que retrasa el proceso de operación minera. Herramientas utilizadas: Knime y Power BI.</p>
+                </span></div>
+            </div>
+        </section>
         <section id="education">
             <h2>Titulos Académicos</h2>
             <div class="skills-list">
@@ -162,13 +186,9 @@
                 <div class="skill"><img src="img/r.jpg" alt="R"><span>R</span></div>
                 <div class="skill"><img src="img/powerbi.jpg" alt="PowerBI"><span>PowerBI</span></div>
                 <div class="skill"><img src="img/knime.jpg" alt="Knime"><span>Knime</span></div>
+                <p>Todas la imágenes de esta sección son generativas. Una muestra de la capacidad de la Ciencia de Datos.</p>
             </div>
         </section>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                alert("Bienvenido a mi perfil profesional!");
-            });
-        </script>
     </div>
 </body>
 </html>
